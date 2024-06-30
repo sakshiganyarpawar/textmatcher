@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text-Matcher</title>
+    <style>
+
+    </style>
 </head>
 <body>
     <div class="container">
@@ -14,5 +17,18 @@
         </div>
         <p class="match-result" id="match-result-text">output:</p>
       </div>
+      <script>
+        function compareText() {
+          const input1element = document.getElementById("input1");
+          const input2element = document.getElementById("input2");
+          const resultElement = document.getElementById("match-result-text");
+          if (input1element.value == input2element.value) {
+            resultElement.innerText = "String Matched!!!";
+          } else {
+            resultElement.innerText = "String Not-Matched!!!";
+          }
+        }
+      </script>
+  
 </body>
 </html>
