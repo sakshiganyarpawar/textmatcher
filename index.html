@@ -16,12 +16,30 @@
         border-radius: 5px;
       }
       .heading {
-        text-align: center;
+        padding-top: 20px;
+        margin-left:150px;
         font-size: 40px;
         color: mediumvioletred;
         font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
       }
-  
+  .texts-container{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+  }
+  .input_text{
+    margin: 3px 10px;
+    width: 250px;
+    height: 90px;
+    border-radius:30px;
+    border: 1px solid rgb(242, 221, 236);
+    background-color: rgb(250, 211, 233);
+    box-shadow: 0px 0px 20px 1px rgb(205, 106, 200) ;
+    text-align: center;
+    font-size: 30px;
+    color:rgb(91, 12, 165) ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
     </style>
   </head>
   <body>
@@ -31,17 +49,17 @@
         <input
           type="text"
           class="input_text"
-          id="input1"
+          id="input1" placeholder="EnterText"
           onkeyup="compareText()"
         />
         <input
           type="text"
           class="input_text"
-          id="input2"
+          id="input2" placeholder="EnterText"
           onkeyup="compareText()"
         />
       </div>
-      <p class="match-result" id="match-result-text">output:</p>
+      <p class="match-result" id="match-result-text"> </p>
     </div>
     <script>
       function compareText() {
