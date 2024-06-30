@@ -1,34 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Text-Matcher</title>
     <style>
-
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1 class="heading">String Comparator</h1>
-        <div class="texts-container">
-          <input type="text" class="input_text" id="input1"  onkeyup="compareText()" />
-          <input type="text" class="input_text"id="input2"onkeyup="compareText()"/>
-        </div>
-        <p class="match-result" id="match-result-text">output:</p>
-      </div>
-      <script>
-        function compareText() {
-          const input1element = document.getElementById("input1");
-          const input2element = document.getElementById("input2");
-          const resultElement = document.getElementById("match-result-text");
-          if (input1element.value == input2element.value) {
-            resultElement.innerText = "String Matched!!!";
-          } else {
-            resultElement.innerText = "String Not-Matched!!!";
-          }
-        }
-      </script>
+      .container {
+        width: 700px;
+        height: 400px;
+        background-color:rgb(250, 211, 233);
+        background-size:contain;
+        background-image: url(image.png);
+        background-position:390%;
+        background-repeat:space;
+        border-radius: 5px;
+      }
+      .heading {
+        text-align: center;
+        font-size: 40px;
+        color: mediumvioletred;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
   
-</body>
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">String Comparator</h1>
+      <div class="texts-container">
+        <input
+          type="text"
+          class="input_text"
+          id="input1"
+          onkeyup="compareText()"
+        />
+        <input
+          type="text"
+          class="input_text"
+          id="input2"
+          onkeyup="compareText()"
+        />
+      </div>
+      <p class="match-result" id="match-result-text">output:</p>
+    </div>
+    <script>
+      function compareText() {
+        const input1element = document.getElementById("input1");
+        const input2element = document.getElementById("input2");
+        const resultElement = document.getElementById("match-result-text");
+        if (input1element.value == input2element.value) {
+          resultElement.innerText = "String Matched!!!";
+        } else {
+          resultElement.innerText = "String Not-Matched!!!";
+        }
+      }
+    </script>
+  </body>
 </html>
